@@ -25,6 +25,7 @@ On Linux, Unix, Windows, or OS X, install a Cobol compiler that offers source-le
 
 #### How can I... 
 
+- [STRINGIT](STRINGIT-notes.md) use INSPECT, STRING, and reference modification to manipulate text data?
 - [HELLO](HELLO-notes.md) eliminate trailing spaces in variable-length text data?
 
 ## Working with numeric data
