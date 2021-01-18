@@ -12,21 +12,21 @@ On Linux, Unix, Windows, or OS X, install a Cobol compiler that offers source-le
 
 ### How can I...
 
-- [MOVEME](MOVEME-notes.md) assign values to Data Division items?
+- [MOVEME](MOVEME-notes.md) ...assign values to Data Division items?
 
 ## Working with datasets
 
 #### How can I... 
 
-- [CPSEQFR](CPSEQFR-notes.md) read and write sequential (QSAM) files with fixed-length records?
-- [CPSEQVR](CPSEQVR-notes.md) read and write sequential (QSAM) files with variable-length records ?
+- [CPSEQFR](CPSEQFR-notes.md) ...read and write sequential (QSAM) files with fixed-length records?
+- [CPSEQVR](CPSEQVR-notes.md) ...read and write sequential (QSAM) files with variable-length records ?
 
 ## Working with text data
 
 #### How can I... 
 
-- [STRINGIT](STRINGIT-notes.md) use INSPECT, STRING, and reference modification to manipulate text data?
-- [HELLO](HELLO-notes.md) eliminate trailing spaces in variable-length text data?
+- [STRINGIT](STRINGIT-notes.md) ...use INSPECT, STRING, and reference modification to manipulate text data?
+- [HELLO](HELLO-notes.md) ...eliminate trailing spaces in variable-length text data?
 
 ## Working with numeric data
 
