@@ -20,6 +20,12 @@ Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run t
 
 - [MOVEME](MOVEME-notes.md) ...assign values to Data Division items?
 
+## Conditional logic 
+
+#### How can I... 
+
+- [COND88](COND88-notes.md) ...work with _condition names_ (or 88-level data items)?
+
 ## Working with datasets
 
 #### How can I... 

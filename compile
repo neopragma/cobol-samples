@@ -58,7 +58,7 @@ if [ $CLEAN == true ] && [ -e "$TARGET/${1}${SUFFIX}" ]; then
     rm "$TARGET/${1}${SUFFIX}"
 fi  
 
-cobc "$COBOPTS" -std=ibm "$SOURCE/$1.CBL"        # compile, assemble, link w/ selected options
+cobc "$COBOPTS" --fnumeric-boolean=ok --fhexadecimal-boolean=ok -std=ibm "$SOURCE/$1.CBL"        # compile, assemble, link w/ selected options
 
 if [ $? -eq 0 ]                         # copy output file to target directory
   then
