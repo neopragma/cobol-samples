@@ -1,0 +1,69 @@
+#!/bin/bash
+#================================================================================
+# Compile a sample program in the cobol-samples project.
+#================================================================================
+. envvars
+
+export COBCPY="$MAINCPY"
+
+function show_help {
+	echo 'GNU COBOL compile script'
+	echo "Version $VERSION"
+	echo 'Usage: compile [options] program-name-without-suffix [subprogram-names]'
+  echo '    -c | --clean  Delete the existing executable before compiling'
+	echo '    -h | --help     Display usage help (this text) and exit'
+  echo '    -s | --subprogram Generate a callable subprogram (not an executable)'
+}
+
+CLEAN=false
+SUBPROGRAM=false
+
+TEMP=`getopt -o chst --long clean,help,subprogram \
+             -n 'javawrap' -- "$@"`
+
+if [ $? != 0 ] ; then show_help >&2 ; exit 0 ; fi
+
+eval set -- "$TEMP"
+
+while [ $# -gt 0 ]; do
+  case "$1" in
+    -c | --clean ) CLEAN=true; shift ;;
+    -h | --help ) show_help; exit 0 ;;
+    -s | --subprogram ) SUBPROGRAM=true; shift ;;
+    -- ) shift; break ;;
+    * ) break ;;
+  esac
+done
+
+if [ $# -eq 0 ]
+  then
+    show_help
+    exit 0
+fi
+
+mkdir -p "$TARGET" 
+
+SOURCE="$MAINSRC"                     # compile production source
+
+if [ $SUBPROGRAM == true ]; then        # make a dynamic link module
+  SUFFIX='.so'
+  COBOPTS='-m'
+else                                    # make an executable
+  SUFFIX=
+  COBOPTS='-x'
+fi
+
+                                        # remove existing output file, if any
+if [ $CLEAN == true ] && [ -e "$TARGET/${1}${SUFFIX}" ]; then
+    rm "$TARGET/${1}${SUFFIX}"
+fi  
+
+cobc "$COBOPTS" -std=ibm "$SOURCE/$1.CBL"        # compile, assemble, link w/ selected options
+
+if [ $? -eq 0 ]                         # copy output file to target directory
+  then
+    mv "${1}${SUFFIX}" "$TARGET/."
+    exit 0
+  else
+    exit 1  
+fi

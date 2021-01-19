@@ -1,0 +1,30 @@
+#=====================================================================
+# Source this file in the project root directory.
+#
+# Example:
+#
+# . envvars
+#
+# VERSION      The version string for the entire project
+#              Returned by various scripts with -v | --version option
+# PROJECT      Path to the project root directory
+# MAINSRC      Path to the application Cobol source
+# TESTSRC      Path to the test Cobol source
+# MAINCPY      Path to the application Cobol copy library
+# TESTCPY      Path to the unit test copy library
+# MAINRSC      Path to the application resources directory
+# TESTRSC      Path to the test resources directory
+# TARGET       Path to the target binary directory (.so & executables)
+# COBCPY       Used by GNU Cobol to locate copybooks
+# COB_LIBRARY_PATH Used by GNU Cobol to locate .so files
+#=====================================================================
+
+export VERSION="0.0.1 Jan 19 2021"
+export PROJECT="$(dirname $0)"
+export MAINSRC="$PROJECT/src/main/cobol"
+export MAINCPY="$MAINSRC/copy"
+export MAINRSC="$PROJECT/src/main/resources"
+export TARGET="$PROJECT/bin"
+export COBCPY="$MAINCPY"
+export COB_LIBRARY_PATH="$TARGET"
+export PATH="$PROJECT:$TARGET:$PATH"
