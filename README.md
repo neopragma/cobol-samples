@@ -24,6 +24,7 @@ Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run t
 
 #### How can I... 
 
+- [IFEVAL](IFEVAL-notes.md) ...use IF/ELSE and EVALUATE for conditional logic? 
 - [COND88](COND88-notes.md) ...work with _condition names_ (or 88-level data items)?
 
 ## Working with datasets
