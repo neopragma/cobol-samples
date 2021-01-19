@@ -44,6 +44,10 @@ Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run t
 
 ## Working with numeric data
 
+#### How can I...
+
+- [INVCALC](INVCALC-notes.md) ...code typical business calculations in Cobol? 
+
 ## Working with dates and times 
 
 #### How can I...
