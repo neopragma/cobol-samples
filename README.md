@@ -8,9 +8,10 @@ On z/OS, compile-link-go. HEX2TEXT is a subprogram. The other samples are main p
 
 On Linux, Unix, Windows, or OS X, install a Cobol compiler that offers source-level compatibility with IBM Enterprise Cobol. Compile HEX2TEXT as a subprogram (.so or .dll), and the other sample programs as main programs. 
 
-Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run the sample programs. Use -s for a subprogram (e.g., HEX2TEXT).
+Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run the sample programs. Use -s for a subprogram (e.g., HEX2TEXT). Script compile-all compiles all the programs in src/main/cobol.
 
-- compile [-s] _programname_
+- compile [-s] _programname_ 
+- compile-all 
 - run _programname_
 
 ## Using basic Cobol statements

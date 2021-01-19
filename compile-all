@@ -1,0 +1,13 @@
+#!/bin/bash
+#================================================================================
+# Compile all the sample programs in the cobol-samples project.
+#================================================================================
+
+declare -A subprograms=([HEX2TEXT]=1)
+
+for filename in ./src/main/cobol/*.CBL
+do 
+    program=$(basename $filename)
+    program=$(echo "$program" | cut -f 1 -d '.')
+    [[ -n "${subprograms[$program]}" ]] && compile -s $program || compile $program
+done    
