@@ -37,5 +37,6 @@ On Linux, Unix, Windows, or OS X, install a Cobol compiler that offers source-le
 
 - [DATE1](DATE1-notes.md) ...get the current date and time using the CURRENT-DATE intrinsic function? 
 - [DATE2](DATE2-notes.md) ...get the current date and time using the Cobol ACCEPT statement? 
+- [HourGlass](HOURGLASS-notes.md) ...set a date and time for the duration of a job or job step? 
 
 
