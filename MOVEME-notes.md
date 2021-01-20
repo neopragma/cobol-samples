@@ -18,7 +18,7 @@ Example 2 is a MOVE statement of a numeric literal to an item defined as PIC S9(
 
 Example 3 is a MOVE statement of a numeric literal to an item defined as PIC S9(16) COMP (or USAGE IS COMPUTATIONAL). It illustrates the fact an item defined this way takes up eight bytes in memory. 
 
-### Example 4: Overwrite binary value with SPACES (USAGE COMP)
+#### Example 4: Overwrite binary value with SPACES (USAGE COMP)
 
 Example 4 shows the effect of a MOVE statement that overwrites a COMPUTATIONAL item with spaces. For a COMPUTATIONAL item, the system treats the binary representation of "spaces" as if it were a binary number. This is not usually the programmer's intent, but it does happen. The result is that computations using the item yield incorrect results.
 
