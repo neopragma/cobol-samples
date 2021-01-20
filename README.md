@@ -49,6 +49,7 @@ Assuming Linux and GnuCOBOL, you can use these Bash scripts to compile and run t
 
 - [INVCALC](INVCALC-notes.md) ...code business calculations in Cobol? 
 - [BRAKES](BRAKES-notes.md) ...code engineering calculations in Cobol? 
+- [ATTRACT](ATTRACT-notes.md) ...code scientific calculations in Cobol?
 
 ## Working with dates and times 
 
