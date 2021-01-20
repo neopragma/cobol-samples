@@ -21,22 +21,21 @@
       * Specific heat of brake material in Joules per KG x Temp Celsius     
            05  sh                          COMP-2 VALUE 800.
       * Weight of the truck in KG 
-           05  w                COMP-2 VALUE 10000.
+           05  w                           COMP-2 VALUE 10000.
       * Vertical displacement on the downhill run in meters
-           05  d       COMP-2 VALUE 75.0.
+           05  d                           COMP-2 VALUE 75.0.
       * a: 9.8 meters per second squared
-           05  a                COMP-2 VALUE 9.8.     
+           05  a                           COMP-2 VALUE 9.8.     
 
        01  CALCULATED-VALUES.
       * Gravitational potential energy loss of the truck in descent
            05  Mgh                         COMP-2.
       * Temperature change in Celsius from the heat exchange 
-           05  deltaT-Celsius          COMP-2.
+           05  deltaT-Celsius              COMP-2.
       * Mass of brake material times specific heat  
            05  mc                          COMP-2.     
       * Temperature change formatted for display 
-           05  deltaT-Celsius-Formatted PIC Z,ZZ9.99.     
-
+           05  deltaT-Celsius-Formatted    PIC Z,ZZ9.99.     
 
        PROCEDURE DIVISION.
 

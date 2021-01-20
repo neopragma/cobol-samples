@@ -87,7 +87,6 @@
                10  ForceAxis    pic x. 
                10  filler       pic x(07) value " axis: ".    
                    
-
        Procedure Division.
 
            perform with test before 

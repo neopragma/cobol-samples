@@ -42,7 +42,6 @@
            05  EX7-FLAG                  PIC S9 COMP-3 VALUE -1.
            05  EX7-TRUE                  PIC S9 COMP-3 VALUE 1.
            05  EX7-FALSE                 PIC S9 COMP-3 VALUE -1. 
-           05  EX7-TOGGLE                PIC S9 COMP-3 VALUE -1.   
 
        PROCEDURE DIVISION.
       *----------------------------------------------------------------
@@ -180,7 +179,7 @@
            END-IF     
       
       * Toggle the flag 
-           COMPUTE EX7-FLAG = EX7-FLAG * EX7-TOGGLE
+           COMPUTE EX7-FLAG = EX7-FLAG * -EX7-FLAG
 
            GOBACK
            .
