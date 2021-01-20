@@ -12,7 +12,7 @@
       *     14-2-deltaT-Celsius-and-heat-capacity/.
       *****************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID.  DATE2.
+       PROGRAM-ID.  BRAKES.
        DATA DIVISION. 
        WORKING-STORAGE SECTION. 
        01  GIVEN-VALUES.
