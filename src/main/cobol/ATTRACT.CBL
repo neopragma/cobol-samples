@@ -1,5 +1,5 @@
       *****************************************************************
-      * Program name:    ATTRACK                           
+      * Program name:    ATTRACT                           
       * Original author: Dave Nicolette            
       *
       * Demonstrates:
